@@ -38,6 +38,8 @@ public class DYimageFX {
         author();
         System.out.println();
         license();
+        
+        test();
     }
     
     public static void about(){
@@ -86,5 +88,11 @@ public class DYimageFX {
             +"IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN\n"
             +"CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.";
         System.out.println(license);
+    }
+    
+    public static void test(){
+        MyImage iobj = new MyImage(3000,1500);
+        DYMosaic.myColorMosaic(iobj, DYColor.Ruby_red, 100);
+        iobj.writeImage("D:\\Mosaic-3000x1500.png");
     }
 }
